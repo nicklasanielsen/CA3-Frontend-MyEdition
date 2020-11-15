@@ -27,6 +27,6 @@ before_deploy:
 deploy:
   provider: script
   skip-cleanup: true
-  script: scp -r ./application/build/* $REMOTE_USER@134.122.64.238:/var/www/$REMOTE_LOCATION
+  script: scp -r ./application/build/* $REMOTE_USER@134.209.247.207:/var/www/$REMOTE_LOCATION
   on:
     branch: master
