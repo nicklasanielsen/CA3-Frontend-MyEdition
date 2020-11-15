@@ -2,6 +2,7 @@ import authFacade from "./helperFacades/AuthFacade";
 import jokeFacade from "./helperFacades/JokeFacade";
 import tokenFacade from "./helperFacades/TokenFacade";
 import userFacade from "./helperFacades/UserFacade";
+import myEditionFacade from "./helperFacades/MyEditionFacade";
 
 function Facade() {
   /** Auth related */
@@ -49,6 +50,15 @@ function Facade() {
     return jokeFacade.getRandomJokes(token);
   };
 
+  /** MyEdition */
+  const getTimeStamp = () => {
+    return myEditionFacade.getTimeStamp();
+  };
+
+  const getFact = () => {
+    return myEditionFacade.getFact();
+  };
+
   return {
     /** Auth related */
     login,
@@ -64,6 +74,10 @@ function Facade() {
 
     /** Joke related */
     getJokes,
+
+    /** MyEdition */
+    getTimeStamp,
+    getFact,
   };
 }
 

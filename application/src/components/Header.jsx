@@ -21,6 +21,16 @@ export default function Header({ isLoggedIn, setLoggedIn, isAdmin }) {
                 Home
               </NavLink>
             </li>
+            <li>
+              <NavLink activeClassName="active" to="/CA3/timestamp">
+                TimeStamp
+              </NavLink>
+            </li>
+            <li>
+              <NavLink activeClassName="active" to="/CA3/fact">
+                Random Fact
+              </NavLink>
+            </li>
             {isLoggedIn && (
               <>
                 <li>

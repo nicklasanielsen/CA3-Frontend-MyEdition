@@ -14,6 +14,8 @@ import Profile from "./components/Profile";
 import Login from "./components/Login";
 import Register from "./components/Register";
 import facade from "./facade";
+import TimeStamp from "./components/TimeStamp";
+import Fact from "./components/Fact";
 
 function App() {
   const [isLoggedIn, setLoggedIn] = useState(facade.isLoggedIn());
@@ -48,6 +50,12 @@ function App() {
         <Switch>
           <Route exact path="/CA3/">
             <Home />
+          </Route>
+          <Route path="/CA3/timestamp">
+            <TimeStamp />
+          </Route>
+          <Route path="/CA3/fact">
+            <Fact />
           </Route>
           <PrivateRoute
             path="/CA3/info/user"
