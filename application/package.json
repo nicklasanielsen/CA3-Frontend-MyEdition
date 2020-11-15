@@ -1,6 +1,6 @@
 {
   "name": "app",
-  "homepage": "https://newbiz.nicklasnielsen.dk/CA3/",
+  "homepage": "https://nicklasnielsen.dk/CA3/",
   "version": "1.0.1",
   "private": true,
   "dependencies": {
